@@ -1,0 +1,13 @@
+# Fake "Geocities" page generator
+def generate_geocities_page():
+    backgrounds = ["stars.gif", "underconstruction.gif", "marble.jpg"]
+    fonts = ["<font face='Comic Sans MS'>", "<font face='Arial'>"]
+    return f"""
+    <html>
+    <body background="{random.choice(backgrounds)}">
+    {random.choice(fonts)}
+    <h1>Welcome to my {random.choice(["cat", "game", "poetry"])} page!</h1>
+    <blink>Under Construction!</blink>
+    </body>
+    </html>
+    """
